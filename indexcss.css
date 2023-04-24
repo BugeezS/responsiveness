@@ -1,0 +1,36 @@
+@media all and (max-width: 480px)  {
+    body{
+        background-color: red;
+        font-size: small;
+    }
+    #container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+}
+@media all and (min-width: 480px) and (max-width: 1024px){
+    body{
+        background-color: green;
+        font-size: medium;
+    }
+    #container{
+        display: grid;
+        grid-template-columns: 2fr 1fr ;
+        grid-template-rows: 2fr ;
+    }
+    #large{
+        grid-column: 1 / 3;
+    }
+}
+@media all and (min-width: 1024px){
+    body{
+        background-color: blue;
+        font-size: large;
+    }
+    #container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-rows: 1fr ;
+    }
+}
